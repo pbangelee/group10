@@ -68,3 +68,21 @@ elif fWinPctg >= .5 :
     print("You had a good season!")
 else :
     print("Your team needs to practice!")
+
+
+
+
+
+
+
+#MAIN
+from function2 import *
+
+while choice !=4:
+    print(menu())
+    if choice == 1:
+        
+    elif choice == 2:
+    
+    elif choice == 3:
+    
