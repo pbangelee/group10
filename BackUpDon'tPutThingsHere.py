@@ -75,14 +75,4 @@ else :
 
 
 
-#MAIN
-from function2 import *
 
-while choice !=4:
-    print(menu())
-    if choice == 1:
-        x =10
-    elif choice == 2:
-        y =20
-    elif choice == 3:
-        z =40
