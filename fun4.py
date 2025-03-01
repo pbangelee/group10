@@ -1,6 +1,8 @@
 #Angelee Marshall
 #Function 4: Recieves teams scores and doesnt allow for ties. Returns output of L or W
-def play_game(home_team, opponent_team):
+import random
+
+def play_game():
     # Generate random scores for both teams
     home_score = random.randint(0, 5)
     opponent_score = random.randint(0, 5)
