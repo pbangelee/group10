@@ -98,6 +98,7 @@ while choice !=3:
             # Stores overall list into dictionary with home team name as the key
             dctTeamRecords[sHomeTeam] = lstGameInfo
 
+            print("Season data saved!")
             # Runs functions to reset the lists for the next loop
             lstTeams = resetsTeams()
             lstGameInfo = resetsLists()
@@ -117,7 +118,9 @@ while choice !=3:
         
         sHomeTeam = userInputLoop(lstTeams,iTeamName)
         
+        # Checks to see if team has been simulated
         if sHomeTeam in dctTeamRecords :
+            # Displays final record
             print(f"\n{sHomeTeam} had a final record of {displayRecord(dctTeamRecords[sHomeTeam])}")
         else :
             print("\nTeam has not been simulated yet")
