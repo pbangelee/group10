@@ -2,10 +2,10 @@
 # Imports functions from files and then runs program to simulate soccer games for various teams and output season results
 
 # Import function files
-from menuFunc import *
+from menuFunc import menu
 from teamListFuncs import *
-from randomGameFunc import *
-from IntroductionFunc import *
+from randomGameFunc import play_game
+from IntroductionFunc import introduction
 from finalRecordFunc import displayRecord
 
 # Initialize variables
