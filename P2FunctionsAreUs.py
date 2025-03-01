@@ -2,11 +2,11 @@
 # Imports functions from files and then runs program to simulate soccer games for various teams and output season results
 
 # Import function files
-from function2 import *
-from Function3 import *
-from fun4 import *
-from function1 import *
-from funtion5 import displayRecord
+from menuFunc import *
+from teamListFuncs import *
+from randomGameFunc import *
+from IntroductionFunc import *
+from finalRecordFunc import displayRecord
 
 # Initialize variables
 lstTeams = [ "Arizona", "Arizona State", "Baylor", 
@@ -98,7 +98,7 @@ while choice !=3:
             # Stores overall list into dictionary with home team name as the key
             dctTeamRecords[sHomeTeam] = lstGameInfo
 
-            print("Season data saved!")
+            print("\nSeason data saved!")
             # Runs functions to reset the lists for the next loop
             lstTeams = resetsTeams()
             lstGameInfo = resetsLists()
