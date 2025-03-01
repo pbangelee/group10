@@ -21,30 +21,36 @@ def printTeams(listP):
 def userInputLoop(listP, TeamValue = None):
     
     if TeamValue != None :
+        if TeamValue < 1 :
+            bCont = True
+            while bCont == True :
+                try:
+                    TeamValue = int(input("\nERROR: TEAM NOT FOUND, ENTER CORRESPONDING NUMBER FOR TEAM: "))
+                    bCont = False
+                except :
+                    print("\nERROR: INCORRECT INPUT TYPE")                
         bContinue = True
         while bContinue == True:
             try :
                 sTeamName = listP[TeamValue-1]
                 bContinue = False
             except :
-                printTeams(listP)
                 try:
-                    TeamValue = int(input("Error, team not found enter corresponding number for team: "))
+                    TeamValue = int(input("\nERROR: TEAM NOT FOUND, ENTER CORRESPONDING NUMBER FOR TEAM: "))
                 except :
-                    print("ERROR: INCORRECT INPUT TYPE")
+                    print("\nERROR: INCORRECT INPUT TYPE")
         
     else :
-        print("Error: No data supplied please input corresponding number")
+        print("\nError: No data supplied please input corresponding number")
         bContinue = True
         while bContinue == True:
             try :
                 sTeamName = listP[TeamValue-1]
                 bContinue = False
             except :
-                printTeams(listP)
                 try:
-                    TeamValue = int(input("Error, team not found enter corresponding number for team: "))
+                    TeamValue = int(input("\nERROR: TEAM NOT FOUND, ENTER CORRESPONDING NUMBER FOR TEAM: "))
                 except :
-                    print("ERROR: INCORRECT INPUT TYPE")
+                    print("\nERROR: INCORRECT INPUT TYPE")
     return sTeamName
 
